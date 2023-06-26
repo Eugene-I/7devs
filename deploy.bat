@@ -1,0 +1,1 @@
+mango deploy --allow-live -e "environment"

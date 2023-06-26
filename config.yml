@@ -1,0 +1,8 @@
+development:
+  password: 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
+  theme_id: "153478005047"
+  store: eugenesdevstore.myshopify.com
+  directory: shop/dist
+  ignore_files:
+  - config/settings_data.json
+            
