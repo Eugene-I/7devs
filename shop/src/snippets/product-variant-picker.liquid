@@ -10,6 +10,10 @@
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
 {%- unless product.has_only_default_variant -%}
+  <div id="product-form__variant-notes">
+    {{ product.selected_variant.metafields.custom.notes | metafield_tag }}
+  </div>
+
   {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"

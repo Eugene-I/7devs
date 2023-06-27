@@ -1052,6 +1052,12 @@ class VariantSelects extends HTMLElement {
           window.variantStrings.soldOut
         );
 
+        const variantNotes = document.getElementById('product-form__variant-notes');
+
+        if (variantNotes) {
+          variantNotes.innerHTML = html.getElementById('product-form__variant-notes').innerHTML;
+        }
+
         publish(PUB_SUB_EVENTS.variantChange, {
           data: {
             sectionId,

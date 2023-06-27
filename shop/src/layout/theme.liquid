@@ -261,6 +261,14 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+    {% comment %}
+      Power Tools Filter app START
+    {% endcomment %}
+    {% section 'filter-menu-settings' %}
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    {% comment %}
+      Power Tools Filter app END
+    {% endcomment %}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -319,12 +327,18 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
   
+          
+        
+          
+        
           <!-- Start Live Server Reloading -->
           <script>
-            var ws = new WebSocket('ws://localhost:58760');
+            var ws = new WebSocket('ws://localhost:49479');
             ws.onmessage = function(evt) { location.reload(); }
           </script>
           <!-- End Live Server Reloading -->
         </body>
+        
+        
         
 </html>
