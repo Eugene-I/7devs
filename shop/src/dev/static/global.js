@@ -1053,7 +1053,6 @@ class VariantSelects extends HTMLElement {
         );
 
         const variantNotes = document.getElementById('product-form__variant-notes');
-
         if (variantNotes) {
           variantNotes.innerHTML = html.getElementById('product-form__variant-notes').innerHTML;
         }
